@@ -45,7 +45,8 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
                 <td>
                 <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
                 <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
-            `;
+                </td>
+                `;
             list.appendChild(row);
             selectedRow = null;
             showAlert("Student Added" , "success");
@@ -66,7 +67,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
 document.querySelector("#student-list").addEventListener("click", (e) => {
     target = e.target;
     if(target.classList.contains("edit")){
-        selectedRow = target.parentElement.parentElement;
+        selectedRow = target.parentElement.parentElement;   
         document.querySelector("#firstName").value = selectedRow.children[0].textcontent ;
         document.querySelector("#lastName").value =  selectedRow.children[1].textcontent;
         document.querySelector("#rollNo").value = selectedRow.children[2].textcontent; 
