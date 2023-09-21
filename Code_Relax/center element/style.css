@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: rgb(43, 44, 44);
+}
+
+/* វិធីសាស្ត្រទី១ ប្រើ Flex */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 15px solid gray;
+  border-radius: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: gold;
+  border-radius: 50%;
+}
+/* វិធីសាស្ត្រទី២ ប្រើ position */
+/* .container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 15px solid gray;
+  border-radius: 20px;
+}
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: gold;
+  border-radius: 50%;
+} */
+
+/* វិធីសាស្ត្រទី៣ ប្រើ Grid */
+
+/* .container {
+  display: grid;
+  place-items: center;
+  width: 500px;
+  height: 500px;
+  border: 15px solid gray;
+  border-radius: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: gold;
+  border-radius: 50%;
+} */

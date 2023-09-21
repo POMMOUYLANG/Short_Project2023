@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reanmore.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d6d651f030.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article>
+      <img src="burger.png" alt="burger image" />
+      <div class="btnContainer">
+        <div>
+          <button class="subtraction" onclick="subtraction()">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <span class="counter">0</span>
+          <button class="addition" onclick="addition()">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <button>Add to Chart</button>
+      </div>
+    </article>
+    <script>
+      const counter = document.querySelector(".counter");
+      let count = 0;
+      const addition = () => {
+        count += 1;
+        counter.innerHTML = count;
+      };
+      const subtraction = () => {
+        if (count > 0) {
+          count -= 1;
+        }
+        counter.innerHTML = count;
+      };
+    </script>
+  </body>
+</html>

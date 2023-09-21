@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(35, 40, 51);
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.navigationBar {
+  margin: 0 auto;
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 200px;
+}
+
+.navLists {
+  display: flex;
+  justify-content: center;
+}
+.navLinks {
+  padding: 0 1.2rem;
+}
+
+.navLinks > a {
+  color: rgb(204, 235, 255);
+  font-size: 1.7rem;
+  transition: color 0.1s ease;
+}
+.navLinks > a:hover {
+  color: white;
+}
+.subNavigationBar {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.subNavigationBar.active {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+.sNBWrapper {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: rgb(140, 152, 177);
+  position: absolute;
+  right: 255px;
+  padding: 3.5rem 0;
+}
+.sNBWrapper::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  background-color: rgb(140, 152, 177);
+  position: absolute;
+  top: -20px;
+  z-index: -999;
+}
+.sNBWrapper .groupLinks:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.sNBWrapper .groupLinks:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.groupLinks {
+  padding: 0 3rem;
+}
+.gLImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 130px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sNBWrapper .groupLinks:first-child > .gLImg {
+  box-shadow: 0px 0px 100px rgb(86, 200, 249);
+}
+.sNBWrapper .groupLinks:nth-child(2) > .gLImg {
+  box-shadow: 0px 0px 100px rgb(146, 245, 142);
+}
+.sNBWrapper .groupLinks:last-child > .gLImg {
+  box-shadow: 0px 0px 100px rgb(255, 177, 252);
+}
+.sNBWrapper .groupLinks:last-child > .subLinksHeader {
+  color: transparent;
+  background: linear-gradient(to right, rgb(171, 21, 226), rgb(220, 74, 174));
+  -webkit-background-clip: text;
+}
+.sNBWrapper .groupLinks:nth-child(2) > .subLinksHeader {
+  color: transparent;
+  background: linear-gradient(to right, rgb(7, 129, 40), rgb(72, 172, 22));
+  -webkit-background-clip: text;
+}
+.sNBWrapper .groupLinks:first-child > .subLinksHeader {
+  color: transparent;
+  background: linear-gradient(to right, rgb(21, 144, 226), rgb(23, 106, 222));
+  -webkit-background-clip: text;
+}
+.subLinksHeader {
+  color: rgb(77, 77, 77);
+  margin: 30px 0 12px 5px;
+}
+.gLImg > img {
+  width: 100%;
+}
+.subLinks {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.subLinks:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.subLinks > a {
+  font-size: 1.2rem;
+  color: rgb(64, 64, 64);
+}

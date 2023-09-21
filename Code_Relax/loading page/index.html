@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>reanmore.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="card">
+      <div class="courseImg loading">
+        <img src="htmlandcss.webp" alt="course banner" />
+      </div>
+      <div class="courseInfo">
+        <h2 class="courseHeading loading">The Ultimate HTML CSS</h2>
+        <p class="courseDesc"></p>
+        <ul>
+          <li class="line loading"></li>
+          <li class="line loading"></li>
+          <li class="line loading"></li>
+        </ul>
+        <button class="btn loading">Preview Course</button>
+      </div>
+    </article>
+    <script>
+      const loadings = document.querySelectorAll(".loading");
+      const courseImage = document.querySelector(".courseImg > img");
+      const courseDescription = document.querySelector(".courseDesc");
+
+      const loadingPage = () => {
+        for (loading of loadings) {
+          loading.classList.remove("loading");
+        }
+        courseImage.style.visibility = "visible";
+        courseDescription.textContent =
+          "រៀនពីចំណុចសូន្យ គ្មានការប្រើនូវ Template ដែលមានស្រាប់ ឬប្រើ Bootstrap framework ដែលគេបង្កើតហើយនោះទេ។";
+      };
+      window.onload = () => {
+        loadingPage();
+      };
+    </script>
+  </body>
+</html>

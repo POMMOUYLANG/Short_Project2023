@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d6d651f030.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>reanmore.com</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topPage">
+      <nav class="navigationBar">
+        <img class="logo" src="icons/logo.png" alt="logo ranmore.com" />
+        <ul class="navLists">
+          <li class="navLinks"><a href="#">Home</a></li>
+          <li class="navLinks toggle">
+            <a href="#"
+              >Courses
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="navLinks"><a href="#">Pricing</a></li>
+          <li class="navLinks"><a href="#">About Us</a></li>
+          <li class="navLinks"><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="subNavigationBar">
+        <div class="sNBWrapper">
+          <div class="groupLinks">
+            <div class="gLImg">
+              <img src="icons/web.png" />
+            </div>
+            <h2 class="subLinksHeader">Web Devlopment</h2>
+            <ul class="subLists">
+              <li class="subLinks"><a href="#">HTML5</a></li>
+              <li class="subLinks"><a href="#">CSS3</a></li>
+              <li class="subLinks"><a href="#">JavaScript</a></li>
+              <li class="subLinks"><a href="#">PHP</a></li>
+            </ul>
+          </div>
+          <div class="groupLinks">
+            <div class="gLImg">
+              <img src="icons/video.png" />
+            </div>
+            <h2 class="subLinksHeader">Video Editing</h2>
+            <ul class="subLists">
+              <li class="subLinks"><a href="#">Premiere Pro</a></li>
+              <li class="subLinks"><a href="#">After Effects</a></li>
+              <li class="subLinks"><a href="#">Davinci Resolve</a></li>
+              <li class="subLinks"><a href="#">Apple Motion</a></li>
+            </ul>
+          </div>
+          <div class="groupLinks">
+            <div class="gLImg">
+              <img src="icons/graphic.png" />
+            </div>
+            <h2 class="subLinksHeader">Graphic Design</h2>
+            <ul class="subLists">
+              <li class="subLinks"><a href="#">Adobe Photoshop</a></li>
+              <li class="subLinks"><a href="#">Adobe Illustrator</a></li>
+              <li class="subLinks"><a href="#">coreldraw</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      const toggle = document.querySelector(".toggle");
+      const subNav = document.querySelector(".subNavigationBar");
+      function showing() {
+        subNav.classList.toggle("active");
+      }
+      toggle.addEventListener("click", showing);
+    </script>
+  </body>
+</html>

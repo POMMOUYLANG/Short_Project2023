@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>reanmore.com</title>
+    <style>
+       body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+       .imageContainer{
+        width: 500px;
+        height: 230px;
+        border-radius: 25px;
+        border: 10px solid white;
+        box-shadow: 0 0 50px rgb(170, 178, 182);
+        overflow: hidden;
+       }
+        img{
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <div class="imageContainer">
+        <img  id="image">
+    </div>
+    <script>
+        let i = 0;
+        const images = ["img1.jpg","img2.jpg","img3.jpg"];
+        const time = 1500;
+
+        const img = document.getElementById("image");
+        
+        const changeImage = ()=>{
+            img.src = images[i];
+
+            if(i < images.length -1){
+                i++;
+            }else{
+                i = 0;
+            }
+            setTimeout("changeImage()", time)
+        }
+        window.onload = changeImage;
+
+    </script>
+</body>
+</html>

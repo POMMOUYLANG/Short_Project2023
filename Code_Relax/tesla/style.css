@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+}
+.logo {
+  width: 125px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+}
+.menu {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tesla {
+  height: 100vh;
+  background-image: url("tesla.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.model {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 7rem 3.5rem;
+}
+h1 {
+  font-size: 3rem;
+}
+a {
+  color: inherit;
+}
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.7rem 0;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.btn-container .btn:last-child {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: inherit;
+}

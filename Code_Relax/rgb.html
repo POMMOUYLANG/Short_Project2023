@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>reanmore.com</title>
+    <!-- ភាពខុសគ្នារវាង Display : none vs Visibility : hidden -->
+    <style>
+      div {
+        width: 700px;
+        height: 200px;
+        border-radius: 30px;
+        margin: 10px auto;
+      }
+      .boxOne {
+        background-color: dodgerblue;
+      }
+      .boxTwo {
+        background-color: gold;
+        /* display: none; */
+        visibility: hidden;
+      }
+      .boxOne:hover + .boxTwo {
+        /* display: block ; */
+        visibility: inherit;
+      }
+      .boxThree {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxOne"></div>
+    <div class="boxTwo"></div>
+    <div class="boxThree"></div>
+  </body>
+</html>
